@@ -1,0 +1,13 @@
+<div class = "left">
+    <h3>Adicionar Nova Cerveja</h3>
+
+    <form class="container" [formGroup]="beerForm" (ngSubmit)="addBeer(beerForm.value)">
+   
+        <input name="name" placeholder="Nome da Cerveja" formControlName="name">
+      
+        <textarea  name="description" placeholder="Descrição da Cerveja" formControlName="description"></textarea>
+   
+      <button type="submit" [disabled]="!beerForm.valid">Adicionar</button>    
+      
+    </form>
+  </div>

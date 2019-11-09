@@ -3,6 +3,10 @@ import { Routes, RouterModule } from '@angular/router';
 import { LayoutComponent } from './core/layout/layout.component';
 import { beerRoutes } from './pages/beer/beer-routing.module';
 
+/**
+ *  O Routing module serve para o gerenciamento de rotas dos componets do angular
+ */
+
 const routes: Routes = [
   {
     path: "",

@@ -8,6 +8,7 @@ import { SidenavComponent } from './core/sidenav/sidenav.component';
 import { NavbarComponent } from './core/navbar/navbar.component';
 import { PagesModule } from './pages/pages.module';
 import { HttpClientModule }    from '@angular/common/http';
+import { CommonModule } from '@angular/common';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { HttpClientModule }    from '@angular/common/http';
     BrowserModule,
     AppRoutingModule,
     PagesModule,
-    HttpClientModule
+    HttpClientModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

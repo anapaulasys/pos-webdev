@@ -1,0 +1,13 @@
+<div class= "left">
+    <h3>Editar Cerveja</h3>
+
+    <form class="container" [formGroup]="beerForm" (ngSubmit)="updateBeer(beerForm.value)">
+    
+      <input name="name" placeholder="Nome da Cerveja" formControlName="name">
+      
+      <textarea  name="description" placeholder="Descrição da Cerveja" formControlName="description"></textarea>
+          
+      <button type="submit" [disabled]="!beerForm.valid"  [routerLink]="['/beers']" >Atualizar</button>
+  
+    </form>
+  </div>

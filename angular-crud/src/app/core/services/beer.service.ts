@@ -2,12 +2,13 @@ import { Injectable } from '@angular/core';
 import { Observable, of, throwError } from 'rxjs';
 import { HttpClient, HttpHeaders, HttpErrorResponse } from '@angular/common/http';
 import { catchError, tap, map } from 'rxjs/operators';
+import { Beer } from '../model/beer.model';
 // import { Beer } from 'src/core/model/beer';
 
 const httpOptions = {
   headers: new HttpHeaders({'Content-Type': 'application/json'})
 };
-const apiUrl = 'http://localhost:5000/api/beer';
+const apiUrl = 'http://localhost:3000/beer';
 
 @Injectable({
   providedIn: 'root'

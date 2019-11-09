@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="example-loading-shade"
+        *ngIf="isLoadingResults">
+      <!-- loading vai aqui -->
+  </div>
+
+  <div class="button-row">
+    <button [routerLink]="['/beers']">Voltar</button>
+  </div>
+
+  <div class="uk-card uk-card-body" class="left">
+      <h3 class="uk-card-title"></h3>
+      {{beer.name}} <br>
+      {{beer.description}} <br>
+      {{beer.dt_atualizacao | date}}
+
+      <button   class="teste" [routerLink]="['/beer-editar', beer.id]"> Editar</button>
+      <button (click)="deleteBeer(beer.id)"> Excluir</button>
+  </div>      
+</div>
