@@ -4,10 +4,10 @@ import { Beer } from 'src/app/core/model/beer.model';
 
 import { Router } from '@angular/router';
 import { ApiService } from 'src/app/core/services/beer.service';
-
+//controlador e troca de informações entre html e scss
 
 @Component({
-  //Irá informar ao Angular qual nome deverá utilizar na tag HTML
+  // selector Irá informar ao Angular qual nome que deverá utilizar na tag HTML
   selector: 'app-beer',
   templateUrl: './beer.component.html',
   styleUrls: ['./beer.component.scss']

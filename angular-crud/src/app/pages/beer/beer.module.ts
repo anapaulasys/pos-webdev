@@ -12,7 +12,8 @@ import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 // import { BeerService } from 'src/app/core/services/beer.service';
 
-
+// aqui irá conter todas os módulos de comunicacao
+// te todos os registros filhos
 
 @NgModule({
   declarations: [
